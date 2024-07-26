@@ -1,0 +1,36 @@
+
+public class Process {
+	private String processID;
+	private int priority;
+	
+	public String process;
+	
+	public int compareTo(Process) {
+		
+	}
+	
+	public void setPriority(int) {
+		
+	}
+	
+	public int getPriority;{
+		
+	}
+	
+	public String getprocessID;{
+		
+	
+	}
+
+
+	@Override
+	public String toString() {
+		return "Process [processID=" + processID + ", priority=" + priority + ", process=" + process + ", getPriority="
+				+ getPriority + ", getprocessID=" + getprocessID + "]";
+	}
+	
+	
+	
+	
+	
+}
