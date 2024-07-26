@@ -1,0 +1,48 @@
+
+public class Task implements Priority {
+
+	private String name;
+	private int priority;
+	
+	public String Task;
+	
+
+	public String getName() {
+		return name;
+		
+	}
+	
+	public getStatus() {
+		
+	}
+	
+	public void setStatus(Status) {
+		
+	}
+	
+	public void setPriority(int) {
+		
+	}
+	
+	public int getPriority{
+		
+	}
+	
+	public int compareTo(Task) {
+	
+	}
+	
+	@Override
+	public String toString() {
+		return "Task [name=" + name + ", priority=" + priority + ", Task=" + Task + ", getPriority=" + getPriority
+				+ "]";
+	}
+	
+	
+		
+		
+	
+
+	
+
+}
