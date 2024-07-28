@@ -1,11 +1,49 @@
 
-public interface Priority {
+public class Process implements Priority, Comparable<Process> {
+	private String processID;
+	private int priority;
 	
-	public static final int MIN_PRIORITY = 1;
-	public static final int MED_PRIORITY = 5;
-	public static final int MAX_PRIORITY = 10;
+	public String process;
 	
-	public void setPriority(int priority);
-	public int getPriority();
+	public Process(String processID) {
+		this.processID = processID;
+		this.priority = MED_PRIORITY;
+	}//end preferred constructor
+	
+	public String getProcessID() {
+		return processID;
+	}//end getProcessID
+	
+	@Override
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}//end setPriority
+	
+	@Override
+	public int getPriority() {
+		return priority;
+	}//end getPriority
+	
+	
+	@Override
+	public int compareTo(Process other) {
+		if (other.priority == this.priority)
+		return 0;
+	else
+		if(other.priority>this.priority)
+		return -1;
+	else
+		return 1;
+	}//end compareTo
+	
+	public String getprocessID;{
 		
-}//end interface
+	}//end getprocessID
+
+
+	@Override
+	public String toString() {
+		return "Process [processID=" +processID+", priority="+priority+"]";
+	}//end toString
+
+}//end class
