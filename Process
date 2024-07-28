@@ -1,36 +1,11 @@
 
-public class Process {
-	private String processID;
-	private int priority;
+public interface Priority {
 	
-	public String process;
+	public static final int MIN_PRIORITY = 1;
+	public static final int MED_PRIORITY = 5;
+	public static final int MAX_PRIORITY = 10;
 	
-	public int compareTo(Process) {
+	public void setPriority(int priority);
+	public int getPriority();
 		
-	}
-	
-	public void setPriority(int) {
-		
-	}
-	
-	public int getPriority;{
-		
-	}
-	
-	public String getprocessID;{
-		
-	
-	}
-
-
-	@Override
-	public String toString() {
-		return "Process [processID=" + processID + ", priority=" + priority + ", process=" + process + ", getPriority="
-				+ getPriority + ", getprocessID=" + getprocessID + "]";
-	}
-	
-	
-	
-	
-	
-}
+}//end interface
