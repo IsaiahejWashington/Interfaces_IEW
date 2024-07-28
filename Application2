@@ -1,0 +1,14 @@
+public class Application {
+
+	public static void main(String[] args) {
+		RationalNumber numer = new RationalNumber(1,7);
+		System.out.println(numer);
+		
+		RationalNumber denom = new RationalNumber(7,4);
+		System.out.println(denom);
+		
+		
+
+	}
+
+}
